@@ -1,11 +1,15 @@
 * {
     margin: 0px;
+    --dgs-theme-color: #054d99;
+    --dgs-theme-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --dgs-theme-font-color: white;
 }
 
 .header_bar {
     width: 100%;
     height: 80px;
     background-color: rgb(63, 63, 206);
+    display: flex;
 }
 
 .header_button {
@@ -31,15 +35,74 @@
     top: 0vw;
 }
 
+.header_title {
+    flex-grow: 1;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+    color:  var(--dgs-theme-font-color);
+    font-size: 32pt;
+    font-family: var(--dgs-theme-font);
+}
+
+
+.header_icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
 li {
     list-style-type: none;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15pt;
+    color: var(--dgs-theme-font-color);
+    font-family: var(--dgs-theme-font);
+    font-size: 24pt;
     padding-top: 20px;
-    }
+}
 
-.header_nav_menu {
+/* .header_nav_menu {
+} */
 
+.main_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100vw;
+}
 
+.main_img {
+    width: 100%;
+    max-width: 1200px;
+}
+
+#canoe_text{
+    color:  var(--dgs-theme-font-color);
+    font-size: 48pt;
+    font-family: var(--dgs-theme-font);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.main_text {
+    text-align: left;
+    padding-left: 24px; 
+}
+
+.main_header {
+    font-family: var(--dgs-theme-font);
+    font-size: 32pt;
+    font-style: bold;
+}
+.h1 {
+    color: rgb(156, 21, 21);
+    text-decoration: underline;
+}
+
+.footer_area {
+    font-size: small;
+    text-align: center;
+    padding-bottom: 12px;
 }
